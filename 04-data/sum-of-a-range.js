@@ -1,24 +1,24 @@
-function range(start, end, step=1) {
-  const result = []
+const range = (start, end, step = 1) => {
+  const result = [];
   if (start < end) {
-    for (let i = start; i <= end; i+=step) {
-      result.push(i)
+    for (let i = start; i <= end; i += step) {
+      result.push(i);
     }
   } else if (start > end) {
     for (let i = start; i >= end; i += step) {
-      result.push(i)
+      result.push(i);
     }
   }
-  return result
-}
+  return result;
+};
 
-function sum(nums) {
-  let result = 0
+const sum = nums => {
+  let result = 0;
   for (const num of nums) {
-    result += num
+    result += num;
   }
-  return result
-}
+  return result;
+};
 
-console.log(sum(range(1, 10)))
-console.log(range(5, 2, -1))
+console.log(sum(range(1, 10)));
+console.log(range(5, 2, -1));
