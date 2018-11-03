@@ -1,13 +1,13 @@
-function isEven(num) {
+const isEven = num => {
   if (Math.abs(num) == 0) {
-    return true
+    return true;
   }
   if (Math.abs(num) == 1) {
-    return false
+    return false;
   }
-  return isEven(Math.abs(num) - 2)
-}
+  return isEven(Math.abs(num) - 2);
+};
 
-console.log(isEven(50))
-console.log(isEven(75))
-console.log(isEven(-1))
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));

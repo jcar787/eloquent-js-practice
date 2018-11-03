@@ -1,12 +1,12 @@
-function min(x, y) {
+const min = (x, y) => {
   if (x < y) {
-    return x
+    return x;
   } else if (y < x) {
-    return y
+    return y;
   }
-  return x
-}
+  return x;
+};
 
-console.log(min(0, 10))
-console.log(min(0, -10))
-console.log(min(5, 5))
+console.log(min(0, 10));
+console.log(min(0, -10));
+console.log(min(5, 5));
