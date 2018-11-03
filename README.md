@@ -11,7 +11,7 @@ I recommend you guys make the exercises if you want to write concise JavaScript
 - [X] Values, Types, and Operators
 - [X] Program Structure
 - [X] Functions
-- [ ] Data Structures: Objects and Arrays
+- [X] Data Structures: Objects and Arrays
 - [ ] Higher-order Functions
 - [ ] The Secret Life of Objects
 - [ ] Project: A Robot
