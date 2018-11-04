@@ -25,11 +25,31 @@ class Group {
     }
     return false;
   }
+
+  [Symbol.iterator]() {
+    let step = -1;
+    const that = this;
+    const iterator = {
+      next() {
+        step++;
+        if (step === that.set.length) {
+          return { done: true, value: undefined };
+        } else {
+          return { done: false, value: that.set[step] };
+        }
+      }
+    };
+    return iterator;
+  }
 }
 
 let group = Group.from([10, 20]);
 console.log(group.has(10));
 console.log(group.has(30));
 group.add(10);
-group.delete(10);
+//group.delete(10);
 console.log(group.has(10));
+
+for (const el of group) {
+  console.log(el);
+}
