@@ -13,7 +13,7 @@ I recommend you guys make the exercises if you want to write concise JavaScript
 - [X] Functions
 - [X] Data Structures: Objects and Arrays
 - [X] Higher-order Functions
-- [ ] The Secret Life of Objects
+- [X] The Secret Life of Objects
 - [ ] Project: A Robot
 - [ ] Bugs and Errors
 - [ ] Regular Expressions
